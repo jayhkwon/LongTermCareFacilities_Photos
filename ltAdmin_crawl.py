@@ -107,7 +107,7 @@ if __name__ == '__main__':
             #t.to_csv(f'photos_{h-1000}-{h}.csv', index = False, encoding = 'utf-8-sig')
             df_img[(h-1000)/1000] = t
     end = time.time()
-    print(f'{round((end-start),0)} seconds')
+    print(f'Total process took {round((end-start)/3600,0)} hours {round(((end-start)%3600)/60,0)} minutes and {round((end-start)%60,0)} seconds')
     driver.close()
 
     #gather all
